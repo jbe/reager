@@ -1,6 +1,6 @@
 {
   "name": "@josteinbe/reager",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "private": false,
   "license": "MIT",
   "repository": {
@@ -28,7 +28,7 @@
     "build-app": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "build-package": "rimraf dist && mkdir dist && cross-env NODE_ENV=production npx babel src/reager --out-dir dist --copy-files",
+    "build-package": "rimraf dist && mkdir dist && cross-env NODE_ENV=production babel src/reager --out-dir dist --copy-files",
     "prepublish": "yarn run build-package"
   },
   "eslintConfig": {
@@ -47,6 +47,7 @@
     ]
   },
   "peerDependencies": {
+    "query-string": "^6.8.2",
     "react-router": "^5.0.1"
   }
 }
