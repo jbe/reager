@@ -1,4 +1,4 @@
-import { useContext, useCallback, useState, useEffect } from "react";
+import React, { useContext, useCallback, useState, useEffect } from "react";
 import md5 from "md5";
 import { __RouterContext as RouterContext } from "react-router";
 import queryString from "query-string";
@@ -123,4 +123,21 @@ export function explainFirebaseError(error) {
   if (!message) console.warn("Unmapped firebase error: ", error.code);
 
   return message || error.message;
+}
+
+export function TotalCenter(props) {
+  const { children } = props;
+
+  return (
+    <div
+      style={{
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+        height: "100vh"
+      }}
+    >
+      {children}
+    </div>
+  );
 }
