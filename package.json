@@ -1,6 +1,6 @@
 {
   "name": "@josteinbe/reager",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "private": false,
   "license": "MIT",
   "repository": {
@@ -15,13 +15,15 @@
     ]
   },
   "dependencies": {
-    "@babel/cli": "^7.5.5",
-    "cross-env": "^5.2.0",
     "md5": "^2.2.1",
     "query-string": "^6",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
-    "react-scripts": "3.1.1",
+    "react-scripts": "3.1.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.5.5",
+    "cross-env": "^5.2.0",
     "rimraf": "^3.0.0"
   },
   "scripts": {
